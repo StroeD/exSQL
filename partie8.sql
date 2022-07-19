@@ -14,4 +14,4 @@ FROM `languages`
 INNER JOIN `frameworks` 
     ON `languages`.`id`=`frameworks`.`languagesId`
 GROUP BY `languages`.`name`
-ORDER BY COUNT(*)<3
+HAVING COUNT(*)<3

@@ -26,7 +26,7 @@ ALTER TABLE `webDevelopment`.`frameworks`
 -- ajouter les colonnes zipCode(VARCHAR) et city(VARCHAR)
 ALTER TABLE `codex`.`clients` 
     DROP COLUMN `secondPhoneNumber`,
-    CHANGE `firstPhoneNumber` `phoneNumber` VARCHAR(50),
-    ADD `zipCode` VARCHAR(50),
+    CHANGE `firstPhoneNumber` `phoneNumber` VARCHAR(12),
+    ADD `zipCode` VARCHAR(5),
     ADD `city` VARCHAR(50);
     
